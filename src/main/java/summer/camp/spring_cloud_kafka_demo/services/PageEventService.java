@@ -33,6 +33,7 @@ public class PageEventService {
         };
     }
     //producer poller
+    //produit un evenement chaque periode du temps (cette période est configurable par défault elles est 1s)
     @Bean
     public Supplier<PageEvent>pageEventSupplier()
     {
